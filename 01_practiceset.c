@@ -47,11 +47,11 @@
 }*/
 //Question 4
 //Celsius to Fahrenheit
-int main(){
+/*int main(){
     float celsius;
     printf("Enter the temperature in Celsius: ");
     scanf("%f",&celsius);
     printf("The temperature in Fahrenheit is: %.2f",celsius*9/5+32);
     return 0;
 }
-
+*/
