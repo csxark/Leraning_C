@@ -62,4 +62,45 @@ multiplication table of 8. (consider 8 x 1 to 8 x 10).*/
 }*/
 //Question 6
 //Write a program to calculate the factorial of a given number using a for loop.
+/*int main(int argc, char const *argv[])
+{
+    int f=7,n,c=1;
+    // printf("Enter the number:- ");
+    // scanf("%d",f);
+    for (int i = 1; i<=f; i++)
+    {
+        c*=i;
+    }
+    printf("The factorial is %d\n",c);
+    while (n<=f)
+    {
+        c*=n;
+        n++;
+    }
+    printf("The factorial is %d",c);
+}*/
+//Question 7
+//. Write a program to check whether a given number is prime or not using loops.
+/*int main(int argc, char const *argv[])
+{
+    int num,prime=0;
+    printf("Enter the number:- ");
+    scanf("%d",&num);
+    for (int i = 2; i < num; i++)
+    {
+        if (num%i==0 && num!=2)
+        {
+            prime=1;
+            break;
+        }
+    }
+    if (prime)
+    {
+        printf("The number is not prime");
+    }
+    else{
+        printf("The number is prime");
+    }
+    return 0;
+}*/
 
