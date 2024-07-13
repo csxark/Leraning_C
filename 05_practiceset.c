@@ -24,3 +24,12 @@ int main(int argc, char const *argv[])
 }*/
 //Question 3
 //Write a program using recursion to calculate nth element of Fibonacci series.
+int fibonacci(int n){
+    long int f=fibonacci(n-1)+fibonacci(n-2);
+    return f;
+}
+void main(int argc, char const *argv[])
+{
+    int num=6;
+    printf("The series is:- %d",fibonacci(num));   
+}
