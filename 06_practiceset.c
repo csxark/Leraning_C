@@ -29,7 +29,7 @@ int main(int argc, char const *argv[])
 //Question 3
 /*Write a program using a function which calculates the sum and average of two
 numbers. Use pointers and print the values of sum and average in main().*/
-void sum(int a , int b){
+/*void sum(int a , int b){
     printf("The sum is %d\n",a+b);
 }
 void avg(int a,int b){
@@ -48,5 +48,4 @@ int main(int argc, char const *argv[])
     sum(num1,num2);
     avg(num1,num2); 
     return 0;
-}
-
+}*/
