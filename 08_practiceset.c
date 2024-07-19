@@ -31,21 +31,44 @@ that the strings are equal.*/
 }*/
 // Question 3
 // Write your own version of strlen function from <string.h>
-int sl(char str)
+/*int sl(char str[])
 {
     int i = 0, count;
     char s = str[i];
-    while (s != '/0')
+    while (s != '\0')
     {
         s = str[i];
         i++;
-    }    
+    }
     return i - 1;
 }
 
 int main()
 {
-    char st[] = "goodnight";
+    char st[] = "goodmorning";
     printf("%d", sl(st));
     return 0;
+}*/
+// Question 4
+/*Write your own version of strcpy function from <string.h>*/
+/*char cp(char s1[],char s2[]){
+    int i=0;
+    s2[i]=s1[i];
+    while (s1[i]!='\0')
+    {
+    s2[i]=s1[i];
+        i++;
+    }
+    s2[i]='\0';
 }
+int main(int argc, char const *argv[])
+{
+    char source[] = "goodmorning";
+    char target[30];
+    cp(source,target);
+    printf("%s , %s",target,source);
+    return 0;
+}*/
+//Question 5
+/*Write a program to encrypt a string by adding 1 to the ascii value of its
+characters.*/
