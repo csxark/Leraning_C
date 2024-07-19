@@ -71,4 +71,17 @@ int main(int argc, char const *argv[])
 }*/
 //Question 5
 /*Write a program to encrypt a string by adding 1 to the ascii value of its
-characters.*/
+characters and Write a program to decrypt the string encrypted using encrypt function*/
+char encrypt(char str[]){
+
+}
+
+char decrypt(char str[]){
+
+}
+
+int main(int argc, char const *argv[])
+{ 
+    char s[]="goodmorning";
+    return 0;
+}
