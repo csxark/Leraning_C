@@ -72,16 +72,71 @@ int main(int argc, char const *argv[])
 //Question 5
 /*Write a program to encrypt a string by adding 1 to the ascii value of its
 characters and Write a program to decrypt the string encrypted using encrypt function*/
-char encrypt(char str[]){
+/*char encrypt(char str[]){
+for (int i = 0; i < strlen(str); i++)
+{
+    str[i]=str[i]+1;
+}
+    printf("%s\n",str);
 
 }
 
 char decrypt(char str[]){
+for (int i = 0; i < strlen(str); i++)
+{
+    str[i]=str[i]-1;
+}
+    printf("%s",str);
 
 }
 
 int main(int argc, char const *argv[])
 { 
-    char s[]="goodmorning";
+    char s[]="good afternoon";
+    encrypt(s);
+    decrypt(s);
     return 0;
-}
+}*/
+//Question 6
+/*Write a program to count the occurrence of a given character in a string.*/
+/*int main(int argc, char const *argv[])
+{
+    char s[]="Good morning";
+    char cha='o';
+    int count=0;
+    for (int i = 0; i < strlen(s); i++)
+    {
+        if (s[i]==cha)
+        {
+            count+=1;
+        }
+        else
+        {
+            continue;
+        }    
+    }
+    printf("The %c in %s is %d times",cha,s,count);
+    return 0;
+}*/
+//Question 7
+/*Write a program to check whether a given character is present in a string or not*/
+/*int main(int argc, char const *argv[])
+{
+    char s[]="Good morning";
+    char cha='o';
+    for (int i = 0; i < strlen(s); i++)
+    {
+        if (s[i]==cha)
+        {
+            printf("The character is present\n");
+            break;
+        }
+        else
+        {
+            continue;
+            printf("The character is not found");
+        }
+    }
+    
+    return 0;
+}*/
