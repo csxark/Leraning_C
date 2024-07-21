@@ -86,24 +86,23 @@
     return 0;
 }*/
 // wap to find a fibonacci series by the number given by the user and also ask how many terms he wants
-void main(int argc, char const *argv[])
+/*void main(int argc, char const *argv[])
 {
     int num1, n, num2;
-    printf("Enter number you want:-");
-    scanf("%d", &num1);
-    num2 = num1;
+    printf("Enter  2 numbers you want:-");
+    scanf("%d %d", &num1,&num2);
     printf("Enter range you want:-");
     scanf("%d", &n);
     printf("%d\t", num1);
-    // printf("%d\t", num2);
-    for (int i = 1; i < n; i++)
+    printf("%d\t", num2);
+    for (int i = 1; i < n-1; i++)
     {
         int fibo = num1 + num2;
         printf("%d\t", fibo);
-        num2 = num1;
-        num1 = fibo;
+        num1 = num2;
+        num2 = fibo;
     }
-}
+}*/
 // wap to find cube of number upto a given integer
 /*int main(int argc, char const *argv[])
 {
