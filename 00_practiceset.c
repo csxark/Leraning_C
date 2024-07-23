@@ -33,6 +33,7 @@
     }
     return 0;
 }*/
+
 // wap to print tables of a range
 /*int main(int argc, char const *argv[])
 {
@@ -85,6 +86,7 @@
     printf("The sum of even numbers is %d",sum);
     return 0;
 }*/
+
 // wap to find a fibonacci series by the number given by the user and also ask how many terms he wants
 /*void main(int argc, char const *argv[])
 {
@@ -103,6 +105,7 @@
         num2 = fibo;
     }
 }*/
+
 // wap to find cube of number upto a given integer
 /*int main(int argc, char const *argv[])
 {
@@ -116,6 +119,7 @@
 
     return 0;
 }*/
+
 // wap to sum of the number of a user provided numbers
 /*int main(int argc, char const *argv[])
 {
