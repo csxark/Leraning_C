@@ -2,66 +2,80 @@
 #include <stdlib.h>
 #include <time.h>
 
-int main()
-{
+// Function to clear the screen
+void clearScreen() {
+    printf("\033[2J\033[1;1H");
+}
+
+// Function to print the game menu
+void printMenu() {
+    clearScreen();
+    printf("\033[34m============================================\n");
+    printf("\033[34m|                Snake Water Gun            |\n");
+    printf("\033[34m============================================\n");
+    printf("\033[37mChoose 0 for Snake\n");
+    printf("\033[37mChoose 1 for Water\n");
+    printf("\033[37mChoose 2 for Gun\n");
+    printf("\033[37mChoose 3 for Exit Game\n");
+    printf("\033[34m============================================\n");
+    printf("\033[37mEnter your choice: ");
+}
+
+int main() {
     srand(time(0));
-    int player, computer = rand() % 3,points=0;
-    while (1)
-    {
-        printf("Choose 0 for Snake\n");
-        printf("Choose 1 for Water\n");
-        printf("Choose 2 for Gun\n");
-        printf("Choose 3 for Exit Game\n");
-        printf("Enter your choice:-");
+    int player, computer, points = 0;
+    while (1) {
+        printMenu();
         scanf("%d", &player);
-        printf("Computer chose %d\n", computer);
-        if (player == 0 && computer == 0)
-        {
-            printf("Its a Draw!\n");
+        printf("\033[34m============================================\n");
+
+        time_t t; 
+        srand((unsigned) time(&t)); 
+        computer = rand() % 3; 
+
+        printf("\033[37mComputer chose %d\n", computer);
+        if (player == 0 && computer == 0) {
+            printf("\033[33mIts a Draw!\n");
         }
-        else if (player == 0 && computer == 1)
-        {
-            printf("You Win!\n");
+        else if (player == 0 && computer == 1) {
+            printf("\033[32mYou Win!\n");
             points++;
         }
-        else if (player == 0 && computer == 2)
-        {
-            printf("You Lose!\n");
+        else if (player == 0 && computer == 2) {
+            printf("\033[31mYou Lose!\n");
         }
-        else if (player == 1 && computer == 0)
-        {
-            printf("You Lose!\n");
+        else if (player == 1 && computer == 0) {
+            printf("\033[31mYou Lose!\n");
         }
-        else if (player == 1 && computer == 1)
-        {
-            printf("Its a Draw!\n");
+        else if (player == 1 && computer == 1) {
+            printf("\033[33mIts a Draw!\n");
         }
-        else if (player == 1 && computer == 2)
-        {
-            printf("You win!\n");
+        else if (player == 1 && computer == 2) {
+            printf("\033[32mYou win!\n");
             points++;
         }
-        else if (player == 2 && computer == 0)
-        {
-            printf("You win!\n");
+        else if (player == 2 && computer == 0) {
+            printf("\033[32mYou win!\n");
             points++;
         }
-        else if (player == 2 && computer == 1)
-        {
-            printf("You Lose!\n");
+        else if (player == 2 && computer == 1) {
+            printf("\033[31mYou Lose!\n");
         }
-        else if (player == 2 && computer == 2)
-        {
-            printf("Its a Draw!\n");
+        else if (player == 2 && computer == 2) {
+            printf("\033[33mIts a Draw!\n");
         }
-        else if (player == 3)
-        {
-            printf("Goodbye! You scored %d Points\n",points);
+        else if (player == 3) {
+            printf("\033[34m============================================\n");
+            printf("\033[37mGoodbye! You scored %d Points\n", points);
             exit(0);
         }
-        else
-        {
-            printf("Something went wrong!");
+        else {
+            printf("\033[31mSomething went wrong!\n");
         }
+        printf("\033[34m============================================\n");
+        printf("\033[37mPress Enter to continue...\n");
+        getchar();
+        getchar();
+        computer = rand() % 3;
     }
 }
