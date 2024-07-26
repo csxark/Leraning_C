@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include<math.h>
+
 /*int radius(){
     int r;
     printf("Enter the radius of the circle:-");
@@ -29,7 +31,7 @@ int main(int argc, char const *argv[])
     return 0;
 }*/
 
-void square()
+/*void square()
 {
     int s;
     printf("Enter the side of the square:-");
@@ -102,4 +104,23 @@ int main(int argc, char const *argv[])
         }
         return 0;
     }
+}*/
+
+int add(int a,int b){
+    int res=a+b;
+    scalblnf
+    return res;
+}
+
+int sub(int a , int b){
+    printf("The differnce is %d\n",(a-b));
+}
+
+int main(int argc, char const *argv[])
+{
+    int n1=12;
+    int n2=100;
+    printf("The sum is %d\n",add(n1,n2));
+    sub(n1,n2);
+    return 0;
 }

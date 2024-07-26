@@ -13,7 +13,7 @@ int main()
     int player, computer, points = 0;
     while (1)
     {
-        system("clear"); // clear the screen
+        system("cls"); // clear the screen
         printf("%s", GITHUB_BACKGROUND); // set GitHub background
         printf("%sRock, Paper, Scissors Game\n" RESET_COLOR, GITHUB_TEXT);
         printf("%s------------------------\n" RESET_COLOR, GITHUB_TEXT);
