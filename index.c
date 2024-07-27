@@ -106,7 +106,7 @@ int main(int argc, char const *argv[])
     }
 }*/
 
-int add(int a,int b){
+/*int add(int a,int b){
     int res=a+b;
     scalblnf
     return res;
@@ -123,4 +123,6 @@ int main(int argc, char const *argv[])
     printf("The sum is %d\n",add(n1,n2));
     sub(n1,n2);
     return 0;
-}
+}*/
+
+
