@@ -27,3 +27,41 @@ int main(int argc, char const *argv[])
     return 0;
 }*/
 
+int main(int argc, char const *argv[])
+{
+    int arr1[3][2]={{7,8},{8,0},{9,5}};
+    int arr2[3][2]={{23,5},{23,45},{12,34}};
+    // int n;
+    // for (int i = 0; i <3; i++)
+    // {   
+    //     for (int j = 0; j < 2; j++)
+    //     {
+    //         printf("Enter the number of %dth row and %dth column:-",i,j);
+    //         scanf("%d",&n);
+    //         arr[i][j]=n;
+    //     }
+    // }
+    printf("[");
+    for (int i = 0; i < 3; i++)
+    {
+        for (int j = 0; j < 2; j++)
+        {
+            printf("%d,\t",arr1[i][j]);
+        }
+    printf("\n");
+    }
+    printf("]");
+    printf("\t");
+    printf("[");
+    for (int i = 0; i < 3; i++)
+    {
+        for (int j = 0; j < 2; j++)
+        {
+            printf("%d,\t",arr2[i][j]);
+        }
+    printf("\n");
+    }
+    printf("]");
+    return 0;
+}
+
