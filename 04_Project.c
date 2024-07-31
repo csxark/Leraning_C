@@ -2,21 +2,48 @@
 #include <stdlib.h>
 
 // Function to add two matrices
-void add(int m, int n, int arr1[m][n], int arr2[m][n]) {
-    for (int i = 0; i < m; i++) {
-        for (int j = 0; j < n; j++) {
+void add(int m, int n, int arr1[m][n], int arr2[m][n])
+{
+    for (int i = 0; i < m; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
             arr1[i][j] = arr1[i][j] + arr2[i][j];
         }
     }
-    for (int i = 0; i < m; i++) {
-        for (int j = 0; j < n; j++) {
+    printf("The New Matrix is \n");
+    for (int i = 0; i < m; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            printf("%d ", arr1[i][j]);
+        }
+        printf("\n");
+    }
+}
+// Function to sub two matrices
+void sub(int m, int n, int arr1[m][n], int arr2[m][n])
+{
+    for (int i = 0; i < m; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            arr1[i][j] = arr1[i][j] - arr2[i][j];
+        }
+    }
+    printf("The New Matrix is \n");
+    for (int i = 0; i < m; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
             printf("%d ", arr1[i][j]);
         }
         printf("\n");
     }
 }
 
-int main(int argc, char const *argv[]) {
+int main(int argc, char const *argv[])
+{
     int m, n;
     printf("Enter the number of rows in the first matrix: ");
     scanf("%d", &m);
@@ -25,18 +52,41 @@ int main(int argc, char const *argv[]) {
     int arr1[m][n];
     int arr2[m][n];
     printf("Enter the elements of the first matrix:-");
-    for (int i = 0; i < m; i++) {
-        for (int j = 0; j < n; j++) {
+    for (int i = 0; i < m; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
             scanf("%d", &arr1[i][j]);
         }
     }
     printf("\n");
     printf("Enter the elements of the second matrix:-");
-    for (int i = 0; i < m; i++) {
-        for (int j = 0; j < n; j++) {
+    for (int i = 0; i < m; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
             scanf("%d", &arr2[i][j]);
         }
     }
-    add(m, n, arr1, arr2);
+    printf("Press 1 for Matrices addition\n");
+    printf("Press 2 for Matrices substraction\n");
+    printf("Press 3 for exit\n");
+    while (1)
+    {
+        switch (ch)
+        {
+        case 1:
+            add(m, n, arr1, arr2);
+            break;
+        case 2:
+            sub(m, n, arr1, arr2);
+            break;
+        case 3:
+            exit(0);
+            break;
+        default:
+            break;
+        }
+    }
     return 0;
 }
