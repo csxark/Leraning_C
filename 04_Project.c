@@ -104,12 +104,12 @@ int main(int argc, char const *argv[])
     }
     while (1)
     {
-    printf("Press 1 for Matrices Addition\n");
-    printf("Press 2 for Matrices Substraction\n");
-    printf("Press 3 for Matrices Multiplication\n");
-    printf("Press 4 for exit\n");
-    scanf("%d", &ch);
-    
+        printf("Press 1 for Matrices Addition\n");
+        printf("Press 2 for Matrices Substraction\n");
+        printf("Press 3 for Matrices Multiplication\n");
+        printf("Press 4 for exit\n");
+        scanf("%d", &ch);
+
         switch (ch)
         {
         case 1:
