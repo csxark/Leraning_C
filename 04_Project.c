@@ -4,11 +4,12 @@
 // Function to add two matrices
 void add(int m, int n, int arr1[m][n], int arr2[m][n])
 {
+    inr res[m][n];
     for (int i = 0; i < m; i++)
     {
         for (int j = 0; j < n; j++)
         {
-            arr1[i][j] = arr1[i][j] + arr2[i][j];
+            res[i][j] += arr1[i][j] + arr2[i][j];
         }
     }
     printf("The New Matrix is \n");
@@ -16,7 +17,7 @@ void add(int m, int n, int arr1[m][n], int arr2[m][n])
     {
         for (int j = 0; j < n; j++)
         {
-            printf("%d ", arr1[i][j]);
+            printf("%d ", res[i][j]);
         }
         printf("\n");
     }
@@ -24,11 +25,12 @@ void add(int m, int n, int arr1[m][n], int arr2[m][n])
 // Function to sub two matrices
 void sub(int m, int n, int arr1[m][n], int arr2[m][n])
 {
+    int res[m][n];
     for (int i = 0; i < m; i++)
     {
         for (int j = 0; j < n; j++)
         {
-            arr1[i][j] = arr1[i][j] - arr2[i][j];
+            res[i][j] += arr1[i][j] - arr2[i][j];
         }
     }
     printf("The New Matrix is \n");
@@ -36,7 +38,7 @@ void sub(int m, int n, int arr1[m][n], int arr2[m][n])
     {
         for (int j = 0; j < n; j++)
         {
-            printf("%d ", arr1[i][j]);
+            printf("%d ", res[i][j]);
         }
         printf("\n");
     }
@@ -57,13 +59,12 @@ void mul(int m, int n, int arr1[m][n], int arr2[m][n])
     {
         for (int j = 0; j < n; j++)
         {
-            for (int k = 0; k < n; k++)
+            for (int k = 0; k < m; k++)
             {
                 res[i][j] = res[i][j] + arr1[i][k] * arr2[k][j];
             }
         }
     }
-
     printf("The New Matrix is \n");
     for (int i = 0; i < m; i++)
     {
@@ -101,13 +102,14 @@ int main(int argc, char const *argv[])
             scanf("%d", &arr2[i][j]);
         }
     }
+    while (1)
+    {
     printf("Press 1 for Matrices Addition\n");
     printf("Press 2 for Matrices Substraction\n");
     printf("Press 3 for Matrices Multiplication\n");
     printf("Press 4 for exit\n");
     scanf("%d", &ch);
-    while (1)
-    {
+    
         switch (ch)
         {
         case 1:
