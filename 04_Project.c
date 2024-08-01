@@ -41,6 +41,26 @@ void sub(int m, int n, int arr1[m][n], int arr2[m][n])
         printf("\n");
     }
 }
+// Function to Multiply two matrices
+void mul(int m, int n, int arr1[m][n], int arr2[m][n])
+{
+    for (int i = 0; i < m; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            arr1[i][j] = arr1[j][i] * arr2[i][j];
+        }
+    }
+    printf("The New Matrix is \n");
+    for (int i = 0; i < m; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            printf("%d ", arr1[i][j]);
+        }
+        printf("\n");
+    }
+}
 
 int main(int argc, char const *argv[])
 {
@@ -68,9 +88,10 @@ int main(int argc, char const *argv[])
             scanf("%d", &arr2[i][j]);
         }
     }
-    printf("Press 1 for Matrices addition\n");
-    printf("Press 2 for Matrices substraction\n");
-    printf("Press 3 for exit\n");
+    printf("Press 1 for Matrices Addition\n");
+    printf("Press 2 for Matrices Substraction\n");
+    printf("Press 3 for Matrices Multiplication\n");
+    printf("Press 4 for exit\n");
     while (1)
     {
         switch (ch)
@@ -82,6 +103,9 @@ int main(int argc, char const *argv[])
             sub(m, n, arr1, arr2);
             break;
         case 3:
+            mul(m, n, arr1, arr2);
+            break;
+        case 4:
             exit(0);
             break;
         default:
