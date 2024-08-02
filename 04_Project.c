@@ -75,7 +75,7 @@ void mul(int m, int n, int arr1[m][n], int arr2[m][n])
         printf("\n");
     }
 }
-
+// Main Menu 
 int main(int argc, char const *argv[])
 {
     int m, n, ch;
@@ -109,7 +109,6 @@ int main(int argc, char const *argv[])
         printf("Press 3 for Matrices Multiplication\n");
         printf("Press 4 for exit\n");
         scanf("%d", &ch);
-
         switch (ch)
         {
         case 1:
