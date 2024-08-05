@@ -86,7 +86,7 @@ int compare(dob d1,dob d2){
     {
         if (/* condition */)
         {
-            /* code */
+            
         }
         else if (/* condition */)
         {
