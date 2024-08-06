@@ -20,11 +20,11 @@ void entry()
     {
         printf("Enter student %d's name:-\n ", i + 1);
         fgets(name, sizeof(name), stdin);
-        name[strcspn(name, "\n")] = 0; 
+        name[strcspn(name, "\n")] = 0;
         strcpy(s[i].name, name);
         printf("Enter the student's course:-\n");
         fgets(course, sizeof(course), stdin);
-        course[strcspn(course, "\n")] = 0; 
+        course[strcspn(course, "\n")] = 0;
         strcpy(s[i].course, course);
         printf("Enter the fees:-");
         scanf("%d", &fee);
@@ -39,7 +39,7 @@ void display()
     struct student s[120];
     int n;
     printf("Enter the number of students:- ");
-    scanf("%d",&n);
+    scanf("%d", &n);
     printf("Name\tCourse\tFee\tDuration\n");
     for (int i = 0; i < n; i++)
     {
@@ -48,7 +48,6 @@ void display()
 }
 int main(int argc, char const *argv[])
 {
-
     entry();
     display();
     return 0;
