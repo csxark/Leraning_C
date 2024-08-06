@@ -4,9 +4,9 @@
 struct student
 {
     char name[64];
+    int duration;
     char course[64];
     int fee;
-    int duration;
 };
 
 void entry()
@@ -22,6 +22,9 @@ void entry()
         fgets(name, sizeof(name), stdin);
         name[strcspn(name, "\n")] = 0;
         strcpy(s[i].name, name);
+        printf("Enter the programme duration:-");
+        scanf("%d", &duration);
+        s[i].duration = duration;
         printf("Enter the student's course:-\n");
         fgets(course, sizeof(course), stdin);
         course[strcspn(course, "\n")] = 0;
@@ -29,9 +32,6 @@ void entry()
         printf("Enter the fees:-");
         scanf("%d", &fee);
         s[i].fee = fee;
-        printf("Enter the programme duration:-");
-        scanf("%d", &duration);
-        s[i].duration = duration;
     }
 }
 void display()
