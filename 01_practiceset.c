@@ -8,7 +8,8 @@
     scanf("%d", &length);
     printf("Enter the breadth of the rectangle: ");
     scanf("%d",&breadth);
-    printf("The area of the rectangle is: %d", length * breadth);
+    int a = length * breadth;
+    printf("The area of the rectangle is: %d", a);
 }*/
 // Question 2
 // Area of circle
