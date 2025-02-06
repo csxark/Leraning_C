@@ -70,37 +70,37 @@ int main(int argc, char const *argv[])
 //Question 4
 /*Write a structure capable of storing date. Write a function to compare those
 dates.*/
-typedef struct date
-{
-    int dd;
-    int mm;
-    int yyyy;
-}dob;
+// typedef struct date
+// {
+//     int dd;
+//     int mm;
+//     int yyyy;
+// }dob;
 
-int compare(dob d1,dob d2){
-    if ((d1.yyyy&&d2.yyyy)&&(d1.mm && d2.mm)&&(d1.dd && d2.dd))
-    {
-        printf("Congarulations! you have same aged");
-    }
-    else if (d1.yyyy>d2.yyyy)
-    {
-        if (/* condition */)
-        {
+//  int compare(dob d1,dob d2){
+//     if ((d1.yyyy&&d2.yyyy)&&(d1.mm && d2.mm)&&(d1.dd && d2.dd))
+//     {
+//         printf("Congarulations! you have same aged");
+//     }
+//     else if (d1.yyyy>d2.yyyy)
+//     {
+//         if (/* condition */)
+//         {
             
-        }
-        else if (/* condition */)
-        {
-            /* code */
-        }
-        else
-        {
-            /* code */
-        }
+//         }
+//         else if (/* condition */)
+//         {
+//             /* code */
+//         }
+//         else
+//         {
+//             /* code */
+//         }
         
-    }
-    else
-    {
-        /* code */
-    }
+//     }
+//     else
+//     {
+//         /* code */
+//     }
     
-}
+// }
