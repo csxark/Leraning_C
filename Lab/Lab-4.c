@@ -334,6 +334,51 @@
 // }
 
 
+// Lab 6
+// int main(int argc, char const *argv[])
+// {
+//     int i,j;
+//     for ( i = 5; i>=1; i--)
+//     {
+//         for ( j = 1; j <=i; j++)
+//         {
+//             printf("%d ",i);
+//         }
+//         printf("\n");
+//     }
+    
+//     return 0;
+// }
 
+// int main(int argc, char const *argv[])
+// {
+//     int i,j;
+//     for ( i = 1; i <=5; i++)
+//     {
+//         for ( j = 1; j <=i ; j++)
+//         {
+//             printf("%d ",i);
+//         }
+//         printf("\n");
+//     }
+    
+//     return 0;
+// }
+
+
+
+int main() {
+    int i,j, num = 1;
+    
+    for( i = 1; i <= 5; i++) {
+        for( j = 1; j <= i; j++) {
+            printf("%d " , num);
+            num++;
+        }
+        printf("\n");
+    }
+    
+    return 0;
+}
 
 
